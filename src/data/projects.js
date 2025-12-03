@@ -145,8 +145,8 @@ export const projects = [
         summary: "개인 맞춤형 식단 정보 제공 어플리케이션",
         description: "머신러닝 기반으로 개인의 신체 상태, 식습관, 건강 상태 등을 바탕으로 영양학적으로 알맞은 식단을 제안합니다.",
         period: "2023.08.01 ~ 2025.02.20",
-        team: "학부연구생",
-        contribution: "백엔드 개발자",
+        team: "3명",
+        contribution: "30%",
         image: "/images/TODAYS-MENU.png",
         stack: {
             Backend: "Node.js",
