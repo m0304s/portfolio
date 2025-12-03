@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <div className="min-h-screen bg-[#FFF9F0] py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl w-full mx-auto bg-white rounded-[2rem] shadow-sm overflow-hidden">
+        <div className="min-h-screen bg-[#FFF9F0] py-6 px-3 sm:px-4 lg:px-6">
+            <div className="max-w-[90%] w-full mx-auto bg-white rounded-[2rem] shadow-sm overflow-hidden">
                 <div className="flex flex-col lg:flex-row">
                     
                     {/* Left Column: Profile & Intro */}

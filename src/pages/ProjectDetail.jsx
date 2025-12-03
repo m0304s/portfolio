@@ -46,8 +46,8 @@ const ProjectDetail = () => {
     }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#FFF9F0] via-[#FFFCF8] to-[#FFF5E6] py-8 px-4 sm:px-6 lg:px-8 print:py-0 print:px-0 print:bg-white">
-            <div className="max-w-6xl mx-auto">
+        <div className="min-h-screen bg-gradient-to-br from-[#FFF9F0] via-[#FFFCF8] to-[#FFF5E6] py-6 px-3 sm:px-4 lg:px-6 print:py-0 print:px-0 print:bg-white">
+            <div className="max-w-[90%] mx-auto">
                 {/* 네비게이션 (인쇄 시 숨김) */}
                 <div className="flex justify-between items-center mb-6 print:hidden">
                     <Link 
@@ -87,7 +87,7 @@ const ProjectDetail = () => {
                     className="bg-white rounded-2xl shadow-sm overflow-hidden print:rounded-none print:shadow-none"
                 >
                     {/* 상단: 제목 영역 */}
-                    <div className="bg-gradient-to-r from-[#FFF9F0] to-[#FFF5E6] px-8 py-6 print:px-6 print:py-4">
+                    <div className="bg-gradient-to-r from-[#FFF9F0] to-[#FFF5E6] px-6 py-6 print:px-4 print:py-4">
                         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 print:text-2xl">{project.title}</h1>
                         {project.result && (
                             <div className="mt-4 flex flex-col items-start gap-2 print:mt-2">
@@ -114,7 +114,7 @@ const ProjectDetail = () => {
                     {/* 본문: 좌우 2단 레이아웃 */}
                     <div className="flex flex-col lg:flex-row">
                         {/* 왼쪽: 요약 + 이미지 */}
-                        <div className="lg:w-2/5 p-8 print:p-6 border-r border-gray-100">
+                        <div className="lg:w-1/2 p-6 print:p-4 border-r border-gray-100">
                             <div className="w-12 h-1 bg-orange-400 mb-5"></div>
                             <h2 className="text-xl font-bold text-orange-500 mb-4 word-keep-all whitespace-pre-line print:text-lg">
                                 {project.summary}
@@ -139,7 +139,7 @@ const ProjectDetail = () => {
                         </div>
 
                         {/* 오른쪽: 상세 정보 */}
-                        <div className="lg:w-3/5 p-8 print:p-6 space-y-6 print:space-y-4">
+                        <div className="lg:w-1/2 p-6 print:p-4 space-y-6 print:space-y-4">
                             {/* 기간 / 인원 */}
                             <div>
                                 <h3 className="font-bold text-gray-900 mb-2 print:text-sm">기간 / 인원 수</h3>

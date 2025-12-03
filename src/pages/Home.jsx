@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Home = () => {
     return (
         <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-br from-[#FFF9F0] via-white to-orange-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[90%] mx-auto px-3 sm:px-4 lg:px-6">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     {/* 왼쪽: 텍스트 */}
                     <motion.div

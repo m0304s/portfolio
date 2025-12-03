@@ -106,12 +106,12 @@ const Skills = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-[#FFF9F0] to-[#FFF5E6] py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen bg-gradient-to-br from-[#FFF9F0] to-[#FFF5E6] py-6 px-3 sm:px-4 lg:px-6">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="max-w-7xl mx-auto"
+                className="max-w-[90%] mx-auto"
             >
                 {/* 페이지 타이틀 */}
                 <div className="text-center mb-12">
