@@ -84,23 +84,24 @@ const ProjectDetail = () => {
                     className="bg-white rounded-2xl shadow-sm overflow-hidden print:rounded-none print:shadow-none"
                 >
                     {/* 상단: 제목 영역 */}
-                    <div className="bg-[#FFF9F0] px-8 py-6 print:px-6 print:py-4">
+                    <div className="bg-gradient-to-r from-[#FFF9F0] to-[#FFF5E6] px-8 py-6 print:px-6 print:py-4">
                         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 print:text-2xl">{project.title}</h1>
                         {project.result && (
-                            <div className="mt-3 text-gray-700 print:text-sm print:mt-2">
+                            <div className="mt-4 flex flex-col items-start gap-2 print:mt-2">
                                 {Array.isArray(project.result) ? (
-                                    <div className="flex flex-col gap-1">
-                                        {project.result.map((res, idx) => (
-                                            <div key={idx} className="flex items-center">
-                                                <span className="text-lg mr-2 print:text-base">🏆</span>
-                                                <span className="word-keep-all">{highlightRank(res)}</span>
-                                            </div>
-                                        ))}
-                                    </div>
+                                    project.result.map((res, idx) => (
+                                        <div 
+                                            key={idx} 
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-full shadow-sm print:px-3 print:py-1"
+                                        >
+                                            <span className="text-amber-500 text-lg print:text-base">🏆</span>
+                                            <span className="text-gray-700 font-medium word-keep-all print:text-sm">{highlightRank(res)}</span>
+                                        </div>
+                                    ))
                                 ) : (
-                                    <div className="flex items-center">
-                                        <span className="text-lg mr-2 print:text-base">🏆</span>
-                                        <span className="word-keep-all">{highlightRank(project.result)}</span>
+                                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-full shadow-sm print:px-3 print:py-1">
+                                        <span className="text-amber-500 text-lg print:text-base">🏆</span>
+                                        <span className="text-gray-700 font-medium word-keep-all print:text-sm">{highlightRank(project.result)}</span>
                                     </div>
                                 )}
                             </div>
