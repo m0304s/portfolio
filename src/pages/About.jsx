@@ -111,7 +111,7 @@ const About = () => {
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2024.11</span>
-                                    <span className="text-gray-600 word-keep-all">2024 관광데이터 활용 공모전 <span className="text-orange-500 font-bold">최우수상</span> (2등)</span>
+                                    <span className="text-gray-600 word-keep-all">2024 관광데이터 활용 공모전 <span className="text-orange-500 font-bold">최우수상</span> (300팀 중 2등)</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2024.01</span>

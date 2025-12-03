@@ -1,7 +1,20 @@
 import { useParams, Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { projects } from '../data/projects';
+
+// 등수 텍스트에 색상 적용하는 함수
+const highlightRank = (text) => {
+    // "1등", "2등", "대상", "최우수상" 등의 패턴을 찾아서 색상 적용
+    const parts = text.split(/(\d+등|대상|최우수상|우수상)/g);
+    return parts.map((part, index) => {
+        if (/\d+등|대상|최우수상|우수상/.test(part)) {
+            return <span key={index} className="text-orange-500 font-bold">{part}</span>;
+        }
+        return part;
+    });
+};
 
 const ProjectDetail = () => {
     const { id } = useParams();
@@ -10,6 +23,11 @@ const ProjectDetail = () => {
     
     const prevProject = projects.find(p => p.id === projectId - 1);
     const nextProject = projects.find(p => p.id === projectId + 1);
+
+    // 페이지 진입 시 스크롤 최상단으로 이동
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [projectId]);
 
     if (!project) {
         return (
@@ -75,14 +93,14 @@ const ProjectDetail = () => {
                                         {project.result.map((res, idx) => (
                                             <div key={idx} className="flex items-center">
                                                 <span className="text-lg mr-2 print:text-base">🏆</span>
-                                                <span className="word-keep-all">{res}</span>
+                                                <span className="word-keep-all">{highlightRank(res)}</span>
                                             </div>
                                         ))}
                                     </div>
                                 ) : (
                                     <div className="flex items-center">
                                         <span className="text-lg mr-2 print:text-base">🏆</span>
-                                        <span className="word-keep-all">{project.result}</span>
+                                        <span className="word-keep-all">{highlightRank(project.result)}</span>
                                     </div>
                                 )}
                             </div>
