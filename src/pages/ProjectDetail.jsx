@@ -128,7 +128,7 @@ const ProjectDetail = () => {
                                     <img
                                         src={project.image}
                                         alt={project.title}
-                                        className="w-full h-auto object-contain max-h-64 print:max-h-48"
+                                        className="w-full h-auto object-contain max-h-96 print:max-h-64"
                                     />
                                 ) : (
                                     <div className="w-full h-48 flex items-center justify-center bg-gray-100 text-gray-400">
