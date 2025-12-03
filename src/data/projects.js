@@ -27,7 +27,7 @@ export const projects = [
         learned: [
             "Redis Stream을 활용한 메시지 브로커의 영속성 보장 방법과 비동기 처리 패턴을 학습했습니다.",
             "MSA 환경에서의 서비스 간 통신 및 독립적 배포 전략을 경험했습니다.",
-            "RAG 시스템 구축을 위한 AI 모델(YOLO, Doclayout) 서빙 및 최적화 방법을 익혔습니다."
+            "RAG 시스템 구축을 위한 AI 모델(Marker, YOLO, Doclayout) 서빙 및 최적화 방법을 익혔습니다."
         ]
     },
     {
