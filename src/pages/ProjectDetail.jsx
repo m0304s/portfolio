@@ -25,7 +25,7 @@ const ProjectDetail = () => {
     }
 
     return (
-        <div className="min-h-screen bg-[#FFF9F0] py-8 px-4 sm:px-6 lg:px-8 print:py-0 print:px-0 print:bg-white">
+        <div className="min-h-screen bg-gradient-to-br from-[#FFF9F0] via-[#FFFCF8] to-[#FFF5E6] py-8 px-4 sm:px-6 lg:px-8 print:py-0 print:px-0 print:bg-white">
             <div className="max-w-6xl mx-auto">
                 {/* 네비게이션 (인쇄 시 숨김) */}
                 <div className="flex justify-between items-center mb-6 print:hidden">

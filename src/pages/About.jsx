@@ -96,23 +96,22 @@ const About = () => {
                             <ul className="space-y-2 text-sm">
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.11</span>
-                                    <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 3차 프로젝트 기업연계 <span className="text-orange-500 font-bold">1등</span> (9팀 중 1등)</span>
+                                    <div className="flex flex-col gap-1">
+                                        <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 3차 프로젝트 기업연계 4반 <span className="text-orange-500 font-bold">1등</span> (9팀 중 1등)</span>
+                                        <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 3차 프로젝트 전국 <span className="text-orange-500 font-bold">4등</span> (118팀 중 4등)</span>
+                                    </div>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.10</span>
-                                    <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 2차 프로젝트 AI(영상) <span className="text-orange-500 font-bold">2등</span> (7팀 중 2등)</span>
+                                    <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 2차 프로젝트 부울경 1반 <span className="text-orange-500 font-bold">2등</span> (7팀 중 2등)</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.08</span>
-                                    <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 1차 프로젝트 웹모바일 <span className="text-orange-500 font-bold">1등</span> (7팀 중 1등)</span>
+                                    <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 1차 프로젝트 부울경 2반 <span className="text-orange-500 font-bold">1등</span> (7팀 중 1등)</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2024.11</span>
                                     <span className="text-gray-600 word-keep-all">2024 관광데이터 활용 공모전 <span className="text-orange-500 font-bold">최우수상</span> (2등)</span>
-                                </li>
-                                <li className="flex gap-3">
-                                    <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2024.05</span>
-                                    <span className="text-gray-600 word-keep-all">부경대학교 Dean's List 선정</span>
                                 </li>
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2024.01</span>

@@ -33,7 +33,7 @@ export const projects = [
     {
         id: 2,
         title: "Watch Out",
-        result: "(SSAFY) 2학기 2차 프로젝트 부울경 2반 2등 (7팀 중 2등)",
+        result: "(SSAFY) 2학기 2차 프로젝트 부울경 1반 2등 (7팀 중 2등)",
         summary: "산업재해 예방을 위한 AI 영상분석 스마트안전관제시스템",
         description: "AI 영상 분석과 스마트워치를 연동하여 건설 현장의 위험 상황을 실시간으로 감지하고 대응할 수 있는 스마트 안전 관제 플랫폼입니다.",
         period: "2025.08 ~ 2025.10 (5주)",
