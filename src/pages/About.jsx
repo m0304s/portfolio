@@ -146,7 +146,7 @@ const About = () => {
                             </div>
                             <ul className="space-y-2 text-sm">
                                 <li className="flex gap-3">
-                                    <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.10 ~ 현재</span>
+                                    <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.10 ~ 2025.12</span>
                                     <span className="text-gray-600 word-keep-all">삼성청년 SW AI 아카데미 2학기 반장 (부울경 캠퍼스 자치회 활동)</span>
                                 </li>
                                 <li className="flex gap-3">
