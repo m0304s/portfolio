@@ -97,7 +97,7 @@ const About = () => {
                                 <li className="flex gap-3">
                                     <span className="font-semibold text-gray-800 min-w-[8.5rem] whitespace-nowrap">2025.11</span>
                                     <div className="flex flex-col gap-1">
-                                        <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 3차 프로젝트 기업연계 4반 <span className="text-orange-500 font-bold">1등</span> (9팀 중 1등)</span>
+                                        <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 3차 프로젝트 기업연계 4반 <span className="text-orange-500 font-bold">1등</span> (7팀 중 1등)</span>
                                         <span className="text-gray-600 word-keep-all">(SSAFY) 2학기 3차 프로젝트 전국 <span className="text-orange-500 font-bold">4등</span> (118팀 중 4등)</span>
                                     </div>
                                 </li>
