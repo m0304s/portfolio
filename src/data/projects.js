@@ -96,7 +96,7 @@ export const projects = [
         summary: "프로야구 팬들을 위한 여행 정보 제공 웹서비스",
         description: "경기 일정 확인 및 카카오 지도를 통해 주변 관광지 정보를 확인할 수 있는 기능을 제공하여 야구 관람과 여행을 연계한 서비스를 제공합니다.",
         period: "2024.04.01 ~ 2024.10.02",
-        team: "4명 (팀 리더)",
+        team: "7명",
         contribution: "30%",
         image: "/images/YAGUHANG.jpg",
         stack: {
