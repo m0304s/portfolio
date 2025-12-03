@@ -52,7 +52,7 @@ const About = () => {
                                     <span className="text-orange-500">지속적인 성장</span>을 목표로 합니다.
                                 </h3>
                                 <p className="leading-relaxed text-gray-600 text-sm word-keep-all">
-                                    "기술은 세상을 변화하고 서비스는 기술을 활용하여 세상의 방향성을 결정한다"는 가치관을 가지고, 유저에게 편리함을 제공하기 위해 끊임없이 학습합니다.
+                                    "기술은 세상을 변화시키고 서비스는 기술을 활용하여 세상의 방향성을 결정한다"는 가치관을 가지고, 유저에게 편리함을 제공하기 위해 끊임없이 학습합니다.
                                 </p>
                             </div>
                         </div>
