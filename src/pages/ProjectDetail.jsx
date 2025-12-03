@@ -4,13 +4,16 @@ import { motion } from 'framer-motion';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { projects } from '../data/projects';
 
-// 등수 텍스트에 색상 적용하는 함수
+// 등수 및 성과 텍스트에 색상 적용하는 함수
 const highlightRank = (text) => {
-    // "1등", "2등", "대상", "최우수상" 등의 패턴을 찾아서 색상 적용
-    const parts = text.split(/(\d+등|대상|최우수상|우수상)/g);
+    // "1등", "2등", "대상", "최우수상", "10,000명", "돌파" 등의 패턴을 찾아서 색상 적용
+    const parts = text.split(/(\d+등|대상|최우수상|우수상|[\d,]+명|돌파)/g);
     return parts.map((part, index) => {
         if (/\d+등|대상|최우수상|우수상/.test(part)) {
             return <span key={index} className="text-orange-500 font-bold">{part}</span>;
+        }
+        if (/[\d,]+명|돌파/.test(part)) {
+            return <span key={index} className="text-blue-500 font-bold">{part}</span>;
         }
         return part;
     });
@@ -92,14 +95,14 @@ const ProjectDetail = () => {
                                     project.result.map((res, idx) => (
                                         <div 
                                             key={idx} 
-                                            className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-full shadow-sm print:px-3 print:py-1"
+                                            className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 border border-amber-300 rounded-full shadow-sm print:px-3 print:py-1"
                                         >
                                             <span className="text-amber-500 text-lg print:text-base">🏆</span>
                                             <span className="text-gray-700 font-medium word-keep-all print:text-sm">{highlightRank(res)}</span>
                                         </div>
                                     ))
                                 ) : (
-                                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-full shadow-sm print:px-3 print:py-1">
+                                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 border border-amber-300 rounded-full shadow-sm print:px-3 print:py-1">
                                         <span className="text-amber-500 text-lg print:text-base">🏆</span>
                                         <span className="text-gray-700 font-medium word-keep-all print:text-sm">{highlightRank(project.result)}</span>
                                     </div>
