@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Inter', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 한글 줄바꿈 방지 */
+.word-keep-all {
+  word-break: keep-all;
+}
+
+/* PDF 인쇄용 스타일 */
+@media print {
+  /* 페이지 설정 - 가로 방향 */
+  @page {
+    size: A4 landscape;
+    margin: 6mm;
+  }
+
+  /* 헤더와 푸터 숨기기 */
+  header,
+  footer {
+    display: none !important;
+  }
+
+  /* 메인 콘텐츠 여백 조정 */
+  main {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  /* 배경색 인쇄 활성화 */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  /* 페이지 나눔 - 각 프로젝트 새 페이지에서 시작 */
+  .print\:break-before-page {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  /* 프로젝트 카드: 한 페이지에 하나씩 */
+  .project-card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .project-card > div {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* 그림자 제거 */
+  .shadow-sm,
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl {
+    box-shadow: none !important;
+  }
+
+  /* 링크 색상 유지 */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /* 버튼 숨기기 */
+  button {
+    display: none !important;
+  }
+
+  /* 본문 배경 */
+  body {
+    background: white !important;
+  }
+
+  /* 콘텐츠가 페이지에 맞게 조정 */
+  .min-h-screen {
+    min-height: auto !important;
+  }
+
+  /* 인쇄 시 숨김 */
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* 배경색 유지 */
+  .bg-\[\#FFF9F0\] {
+    background-color: #FFF9F0 !important;
+  }
+
+  .bg-\[\#FFFCF8\] {
+    background-color: #FFFCF8 !important;
+  }
+
+  /* 인쇄 시 높이/오버플로우 */
+  .print\:h-full {
+    height: 100% !important;
+  }
+
+  .print\:max-h-full {
+    max-height: 100% !important;
+  }
+
+  .print\:overflow-hidden {
+    overflow: hidden !important;
+  }
+
+  /* 인쇄 시 flex */
+  .print\:flex-row {
+    flex-direction: row !important;
+  }
+
+  .print\:w-2\/5 {
+    width: 40% !important;
+  }
+
+  .print\:w-3\/5 {
+    width: 60% !important;
+  }
+}
