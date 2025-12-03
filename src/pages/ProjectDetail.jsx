@@ -142,13 +142,13 @@ const ProjectDetail = () => {
                         <div className="lg:w-3/5 p-8 print:p-6 space-y-6 print:space-y-4">
                             {/* 기간 / 인원 */}
                             <div>
-                                <h3 className="font-bold text-gray-900 mb-2 print:text-sm">기간 / 인원 수.</h3>
+                                <h3 className="font-bold text-gray-900 mb-2 print:text-sm">기간 / 인원 수</h3>
                                 <p className="text-gray-600 print:text-sm">{project.period} / {project.team}</p>
                             </div>
 
                             {/* 기술 스택 */}
                             <div>
-                                <h3 className="font-bold text-gray-900 mb-3 print:text-sm">기술 스택.</h3>
+                                <h3 className="font-bold text-gray-900 mb-3 print:text-sm">기술 스택</h3>
                                 <div className="text-gray-600 space-y-1 print:text-sm">
                                     {Object.entries(project.stack).map(([key, value]) => (
                                         <div key={key} className="flex items-start">
@@ -161,7 +161,7 @@ const ProjectDetail = () => {
 
                             {/* 담당 역할 */}
                             <div>
-                                <h3 className="font-bold text-gray-900 mb-3 print:text-sm">담당 역할.</h3>
+                                <h3 className="font-bold text-gray-900 mb-3 print:text-sm">담당 역할</h3>
                                 <div className="text-gray-600 print:text-sm">
                                     {project.contribution && (
                                         <div className="font-semibold text-orange-500 mb-4 print:mb-3">
@@ -179,7 +179,7 @@ const ProjectDetail = () => {
                             {/* 배운 내용 */}
                             {project.learned && (
                                 <div>
-                                    <h3 className="font-bold text-gray-900 mb-3 print:text-sm">배운 내용.</h3>
+                                    <h3 className="font-bold text-gray-900 mb-3 print:text-sm">배운 내용</h3>
                                     <ul className="list-disc list-outside ml-5 space-y-2 text-gray-600 print:text-sm print:space-y-1">
                                         {project.learned.map((item, i) => (
                                             <li key={i} className="word-keep-all">{item}</li>
